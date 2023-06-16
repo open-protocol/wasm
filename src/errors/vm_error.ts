@@ -10,9 +10,9 @@ export class VmError implements Error {
 
   static aborted = (msg: string) => {
     return new VmError("Aborted", msg);
-  }
+  };
 
   static runtimeErr = (msg: string) => {
     return new VmError("RuntimeErr", `Error executing Wasm: ${msg}`);
-  }
+  };
 }

@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { Env, MessageInfo } from "../std/types.js";
+import { Env, MessageInfo } from "../std/index.js";
 import { Instance } from "./instance.js";
 export declare const MI: number;
 export declare const RESULT_INSTANTIATE: number;

@@ -10,9 +10,12 @@ export class CommunicationError implements Error {
 
   static zeroAddress = () => {
     return new CommunicationError("ZeroAddress", "Got a zero Wasm address");
-  }
+  };
 
   static regionLengthTooBig = (length: number, maxLength: number) => {
-    return new CommunicationError("RegionLengthTooBig", `Region length too big. Got ${length}, limit ${maxLength}`);
-  }
+    return new CommunicationError(
+      "RegionLengthTooBig",
+      `Region length too big. Got ${length}, limit ${maxLength}`
+    );
+  };
 }

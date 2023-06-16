@@ -1,5 +1,5 @@
-export { BackendApi, Querier, Storage } from "./backend.js";
-export { Instance } from "./instance.js";
-export { readRegion, writeRegion } from "./memory.js";
-export { callQuery } from "./calls.js";
-export { decodeSections } from "./sections.js";
+export * from "./backend.js";
+export * from "./instance.js";
+export * from "./memory.js";
+export * from "./calls.js";
+export * from "./sections.js";

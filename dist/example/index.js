@@ -1,6 +1,4 @@
-import { Backend } from "../vm/backend.js";
-import { callExecute, callInstantiate } from "../vm/calls.js";
-import { Instance, callQuery, } from "../vm/index.js";
+import { callExecute, callInstantiate, callQuery, Backend, Instance, } from "../vm/index.js";
 import fs from "fs";
 class MockBackendApi {
     canonicalAddress(human) {

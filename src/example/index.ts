@@ -1,12 +1,13 @@
 import { Env, MessageInfo } from "../std/index.js";
-import { Backend } from "../vm/backend.js";
-import { callExecute, callInstantiate } from "../vm/calls.js";
 import {
+  callExecute,
+  callInstantiate,
+  callQuery,
+  Backend,
   BackendApi,
   Instance,
   Querier,
   Storage,
-  callQuery,
 } from "../vm/index.js";
 import fs from "fs";
 

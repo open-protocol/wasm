@@ -113,6 +113,7 @@ export function doEd25519BatchVerify(instance, messagesPtr, signaturesPtr, publi
     const signaturesLen = signatures.length;
     const publicKeysLen = publicKeys.length;
     if (messagesLen === signaturesLen && signaturesLen === publicKeysLen) {
+        //
     }
     else if (messagesLen === 1 && signaturesLen === publicKeysLen) {
         messages = new Array(signaturesLen).fill(messages[0]);
@@ -123,7 +124,8 @@ export function doEd25519BatchVerify(instance, messagesPtr, signaturesPtr, publi
     else {
         return ED25519_VERIFY_CODE_INVALID;
     }
-    if (messages.length !== signaturesLen || messages.length !== publicKeys.length) {
+    if (messages.length !== signaturesLen ||
+        messages.length !== publicKeys.length) {
         return ED25519_VERIFY_CODE_INVALID;
     }
     for (let i = 0; i < messages.length; i++) {
